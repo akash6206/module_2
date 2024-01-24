@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <table style="width: 40%;">
+
+    <tr>
+        <th>product name</th>
+        <th>qty</th>
+        <th>price</th>
+        <th>addition</th>
+        <th>show</th>
+    </tr>
+    <tr>
+        <td>book</td>
+        <td><input type="number" id="qty_enter"></td>
+        <td><input type="number" id="price_enter"></td>
+        <td><button id="get_both" onclick="">subtotal</button></td>
+        <td><h1 id="showhere"></h1></td>
+    </tr>
+    </table>
+    <script>
+        get_qty = document.getElementById('qty_enter')
+        get_price = document.getElementById('price_enter') 
+        get_both = document.getElementById('get_both')
+      show_subtotal = document.getElementById('showhere')
+
+      function getInputValue(){
+
+      a = get_qty.value* get_price.value;
+      console.log(a)
+      show_subtotal.innerHTML = (a);
+
+      }
+      get_both.addEventListener("click",getInputValue)
+
+    </script>
+</body>
+</html>

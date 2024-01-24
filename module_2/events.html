@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+
+    <button onclick="showAlert()">Click me for Alert</button>
+
+    <button onclick="logToConsole()">Click me for Console Log</button>
+
+    <button onclick="getUserInput()">Click me for User Input</button>
+    <script>
+        function showAlert() {
+           alert("Hello, World!");
+       }
+       
+
+       function logToConsole() {
+        console.log("Hello, World!");
+    }
+    
+
+
+    function getUserInput() {
+        var userInput = prompt("Enter your name:");
+        console.log("Hello, " + userInput + "!");
+    }
+
+
+    </script>
+
+</body>
+</html>
